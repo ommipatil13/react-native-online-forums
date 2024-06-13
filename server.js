@@ -21,13 +21,13 @@ dataBaseConnect()
 app.use('/api', userRouter);
 app.use('/api', postRouter);
 
-// app.get('/', (req, res) => {
-//     res.status(200).json({
-//         success: true,
-//         message: "check",
+app.get('/', (req, res) => {
+    res.status(200).json({
+        success: true,
+        message: "check",
 
-//     })
-// })
+    })
+})
 
 app.listen(serverPORT, () => {
     console.log(`server is running in ${serverPORT}`)
